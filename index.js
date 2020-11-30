@@ -1,8 +1,19 @@
-
-const A187 = '🔥 𝗪𝗛𝗔𝗧𝗦𝗔𝗣𝗣  𝗕𝗢𝗧 🔥'; // JANGAN UBAH-UBAH INFO!!!
-const instagram = 'https://instagram.com/dulmukti_id'; // JANGAN UBAH-UBAH INFO!!!
-const nomer = 'Wa.me/+6285314948812'; // JANGAN UBAH-UBAH INFO!!!
+/*
+* JANGAN UBAH-UBAH INFO!!!
+* "JANGAN MODAL NAMA DOANG BRO!!!"
+* SCRIPT BY ARIS187 ID
+* JANGAN MODAL NAMA DOANG BOSQ
+* HARGAILAH YY MEMBUAT SCRIPT INI BOSQ
+* JANGAN UBAH-UBAH INFO!!!
+* ARIS187 ID
+* BOLEH UBAH TAPI KECUALI INFO!!!
+*/
+const A187 = '👾AR15BOT👾'; // JANGAN UBAH-UBAH INFO!!!
+const instagram = 'https://instagram.com/_sadboy.ig'; // JANGAN UBAH-UBAH INFO!!!
+const nomer = 'Wa.me/+6285722553839'; // JANGAN UBAH-UBAH INFO!!!
 const aktif = 'Tergantung jaringan'; // JANGAN UBAH-UBAH INFO!!!
+const groupwhatsapp = 'https://chat.whatsapp.com/GU6NsgZvfgw37vrjIxUPhP'; // JANGAN UBAH-UBAH INFO!!!
+const youtube = 'https://www.youtube.com/channel/UCGYLWtyT9IADYNUiK0uZiGg'; // JANGAN UBAH-UBAH INFO!!!
 //A187ID
 const qrcode = require("qrcode-terminal");
 const moment = require("moment");
@@ -47,7 +58,7 @@ conn.on('qr', qr =>
    {
       small: true
    });
-console.log(`[ ${moment().format("HH:mm:ss")} ] INDAH BOT TERSEDIA  SCAN QR NOW!`);
+   console.log(`[ ${moment().format("HH:mm:ss")} ] AR15BOT ready scan now!`);
 });
 
 conn.on('credentials-updated', () =>
@@ -62,11 +73,11 @@ fs.existsSync('./session.json') && conn.loadAuthInfo('./session.json')
 //conn.connectOptions.agent = ProxyAgent ('http://1.0.180.120:8080')
 conn.connect();
 
-conn.on('user-presence-update', json => console.log(`[ ${moment().format("HH:mm:ss")} ] => whatsapp bot active`))
+conn.on('user-presence-update', json => console.log(`[ ${moment().format("HH:mm:ss")} ] => bot by @_sadboy.ig`))
 conn.on('message-status-update', json =>
 {
    const participant = json.participant ? ' (' + json.participant + ')' : '' // participant exists when the message is from a group
-   console.log(`[ ${moment().format("HH:mm:ss")} ] => whatsapp bot active`)
+   console.log(`[ ${moment().format("HH:mm:ss")} ] => bot by @_sadboy.ig`)
 })
 
 conn.on('message-new', async(m) =>
@@ -134,10 +145,10 @@ else if (text == 'Asu'){
 conn.sendMessage(id, 'Lu Asw' ,MessageType.text);
 }
 else if (text == '#owner'){
-conn.sendMessage(id, ' *Owner INDAH BOT wa.me/+6285314948812* ' ,MessageType.text);
+conn.sendMessage(id, ' *Owner AR15BOT wa.me/+6285722553839* ' ,MessageType.text);
 }
 else if (text == '#creator'){
-conn.sendMessage(id, ' *Creator INDAH BOT wa.me/+6285314948812* ' ,MessageType.text);
+conn.sendMessage(id, ' *Creator AR15BOT wa.me/+6285722553839* ' ,MessageType.text);
 }
 else if (text == 'Pagi'){
 conn.sendMessage(id, ' _Pagi juga, Iyah aku disini kak...ada yang bisa kami bantu? Ketik *#menu* untuk melihat fitur bot kami🙏_ ' ,MessageType.text);
